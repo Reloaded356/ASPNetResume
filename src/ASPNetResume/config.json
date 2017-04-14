@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "ASPNetResume"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-ASPNetResume-6ebb86f9-9934-488c-9610-f1c69ae3da87;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
