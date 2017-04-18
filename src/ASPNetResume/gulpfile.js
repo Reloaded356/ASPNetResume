@@ -1,4 +1,4 @@
-﻿/// <binding Clean='clean' />
+﻿/// <binding BeforeBuild='clean, min:js, sass, min:css' Clean='clean' />
 
 var gulp = require("gulp"),
     rimraf = require("rimraf"),
@@ -25,6 +25,10 @@ gulp.task('sass', function() {
     gulp.src(paths.scss)
         .pipe(sass())
         .pipe(gulp.dest(paths.webroot + "css"));
+});
+
+gulp.task('css', function () {
+   gulp.watch(paths.css, ['css']);
 });
 
 gulp.task('watch-sass', function() {
